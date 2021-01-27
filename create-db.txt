@@ -1,0 +1,5 @@
+sudo mysql
+mysql> create database todo;   -- Creates the new database
+mysql> create user 'todo_user'@'%' identified by 'test1234';    -- Creates the user
+mysql> grant all on todo.* to 'todo_user'@'%';     -- Gives all privileges to the new user on the newly created database
+mysql> exit;
